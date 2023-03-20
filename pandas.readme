@@ -1,0 +1,27 @@
+笔记：
+1.第一行是垃圾数据
+2.第一列是时间
+df.shape[0]行数量
+df.shape[1]列数量
+df.colummns 列的名称
+df.index 每一行的名字
+df.dtypes输出每一列的数据类型
+df.head[3]前三行数据
+df.tail(3)看最后3行数据
+df.sample(n=3)随机3行数据 frac=0.5，抽取50%的数据
+df.describe()对每列数据的统计
+pd.set_iption('expand_frame_repr',false),列太长也不换行
+pd.set_option('max_colwidth',2) 设置最大长度
+pd.set_option('display.max_rows',10)设定显示最大行数
+pd.set_option('precision',8) 浮点数的精度 77.12345678
+df.loc['2018-01-02'] zhi
+df.loc['2018-01-02']
+
+filepath_or_buffer=''数据在电脑的路径
+sep=‘，’ 分隔符
+skipros=1 第一行数据不读入
+nrows=15只读15行数据
+parse_dates['candle_begin_time']指定列的数据为日期格式，若不指定则时间数据为字符串形式输入
+index_col=['candle_begin_time'] 将指定列设置 为index，如不指定则为01234
+usecols=['candle_begin_time','close']指定这几列为读入数据，若不指定则全部读入
+
